@@ -1,0 +1,171 @@
+*{
+    margin:auto;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.container{
+    width:100%;
+    min-height: 100vh;
+    /* background: linear-gradient(140deg, #153677, #a34594, #538364, #c26b7f); */
+    background: url(images/back2.png);
+    background-size: cover;
+    /* animation: gradient-animation 24s ease infinite; */
+    padding: 10px;
+}
+
+.img1 img{
+    max-width: 40px;
+    max-height : 40px;
+    position:relative;
+    margin-left: 5px;
+}
+
+.ToDo-App{
+    width:100%;
+    max-width:540px;
+    background:#ffff;
+    margin:100px auto 20px;
+    padding:40px 30px 70px;
+    border-radius:10px;
+}
+
+.ToDo-App h2{
+    color:#3c5791;
+    display:flex;
+    align-items:center;
+    margin-bottom:20px;
+}
+
+.datetime{
+    color:#fff;
+    background: #232323;
+    width:270px;
+    padding:15px 10px;
+    margin-bottom: 20px;
+    border: 3px solid #2E94E3;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    /* -webkit-box-reflect: below 1px linear-gradient(transparent,rgba(255,255,255,0.1)); */
+}
+
+.datetime:hover{
+    background:#212F3C;
+    box-shadow: 0 0 10px #2E94E3;
+}
+
+.date{
+    font-size:16px;
+    align-items: center;
+    text-align: center;
+    margin: 2px;
+}
+
+.time{
+    font-size: 25px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.time span:not(:last-child){
+    position:relative;
+    font-weight: 450;
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 25px;
+}
+
+.time span:last-child{
+    /* background:#2E94E3; */
+    font-size: 20px;
+    font-weight: 450p;
+    border-radius:3px;
+    padding:0 5px;
+}
+
+
+.row{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    background:#edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+}
+
+input{
+    flex:1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding:10px;
+}
+
+button{
+    border:none;
+    outline: none;
+    padding: 16px 50px;
+    background: #232323;
+    color:#fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+
+ul li{
+    list-style:none;
+    font-size: 17px;
+    padding:12px 8px 12px 50px;
+    user-select: none;
+    position: relative;
+}
+
+ul li::before{
+    content:'';
+    position: absolute;
+    height: 25px;
+    width:25px;
+    border-radius: 50%;
+    background-image: url(Images/icons8-circle-50.png);
+    background-size: contain; 
+    top: 8px;
+    left:8px;
+}
+
+ul li.checked{
+    color:#555;
+    text-decoration: line-through;
+}
+
+ul li.checked::before{
+    background-image: url(images/icons8-checked.gif);
+}
+
+
+ul li span{
+    position: absolute;
+    right:0;
+    top:25px;
+    transform: translateY(-50%);
+    width:40px;
+    height:40px;
+    font-size: 22px;
+    color:#555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    
+}
+
+ul li span:hover{
+    background:#edeef0;
+}
+
+span i.ri-chat-delete-line {
+    color: #ff0000; /* Adjust the color as needed */
+    font-size: 25x; /* Adjust the font size as needed */
+    cursor: pointer; /* Add a pointer cursor to indicate interactivity */
+}
